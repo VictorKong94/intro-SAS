@@ -49,6 +49,6 @@ ODS PDF CLOSE;
 ODS PDF FILE='/folders/myfolders/proj3-test.pdf';
 TITLE3 'Testing Equivalence of Sepal Lengths Across Iris Species';
 ODS TEXT="To statistically test whether the sepal lengths for the three species
- are the same, we can perform three pairwise t-tests assessing whether the
- pairwise differences in sepal lengths equal to 0.";
+ are the same, we can perform three two-sample t-tests assessing whether the
+ differences in mean sepal lengths is 0.";
 ODS PDF CLOSE;

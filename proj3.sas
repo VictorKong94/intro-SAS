@@ -45,10 +45,10 @@ PROC PRINT DATA=IRIS;
 RUN;
 ODS PDF CLOSE;
 
-* Print to PDF answer concerning equivalence of sepal lengths; 
-ODS PDF FILE='/folders/myfolders/proj3-test.pdf';
-TITLE3 'Testing Equivalence of Sepal Lengths Across Iris Species';
-ODS TEXT="To statistically test whether the sepal lengths for the three species
- are the same, we can perform three two-sample t-tests assessing whether the
- differences in mean sepal lengths is 0.";
-ODS PDF CLOSE;
+/*******************************************************************************
+ How you would conduct a statistical test of whether the sepal lengths for the
+ three species are the same?
+
+ To statistically test whether the sepal lengths for the three species are the
+ same, we can perform a one-factor ANOVA using the mean sepal lengths.
+*******************************************************************************/

@@ -54,13 +54,14 @@ PROC MEANS DATA=SLEEP
 RUN;
 ODS PDF CLOSE;
 
-* Print to PDF an answer concerning testing drug effectiveness;
-ODS PDF FILE='/folders/myfolders/proj2-test.pdf';
-TITLE3 'Testing Drug Effectiveness';
-ODS TEXT="To statistically test the effective of the drug, we could perform a
+/*******************************************************************************
+ What is a reasonable procedure to statistically test for the effectiveness of
+ the drug?
+
+ To statistically test the effective of the drug, we could perform a
  pairwise t-test assessing whether the difference between the sleep latency
- times for the two weeks equals to 0.";
-ODS PDF CLOSE;
+ times for the two weeks equals to 0.
+*******************************************************************************/
 
 * Save the sleep latency data to be used in Project 3;
 PROC EXPORT DATA=SLEEP

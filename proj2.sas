@@ -37,7 +37,7 @@ PROC SORT DATA=SLEEP;
 RUN;
 
 * Make a nice PDF printout of the sleep latency data;
-ODS PDF FILE='/folders/myfolders/proj2-sorted.pdf'
+ODS PDF FILE='/folders/myfolders/proj2-data.pdf'
   COLUMNS=3;
 TITLE3 'Sleep Latency Data';
 PROC PRINT DATA=SLEEP;
@@ -64,8 +64,9 @@ ODS PDF CLOSE;
 *******************************************************************************/
 
 * Save the sleep latency data to be used in Project 3;
-PROC EXPORT DATA=SLEEP
-  OUTFILE='/folders/myfolders/sleep.dat'
-  REPLACE
-  DBMS=dlm;
+FILENAME OUT '/folders/myfolders/sleep.dat';
+DATA _NULL_;
+  SET SLEEP;
+  FILE OUT;
+  PUT PATIENT WEEK1 WEEK2;
 RUN;

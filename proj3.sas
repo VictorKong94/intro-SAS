@@ -2,10 +2,9 @@ TITLE 'Introduction to SAS: Project 3';
 
 * Load the sleep latency data saved from Project 2;
 FILENAME REFFILE '/folders/myfolders/sleep.dat';
-PROC IMPORT DATAFILE=REFFILE
-  DBMS=dlm
-  OUT=SLEEP;
-  GETNAMES=YES;
+DATA SLEEP;
+  INFILE '/folders/myfolders/sleep.dat';
+  INPUT PATIENT WEEK1 WEEK2;
 RUN;
 
 * Modify the dataset to include paired differences;

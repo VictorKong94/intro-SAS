@@ -1,0 +1,5 @@
+# MacOS preference files
+.DS_Store
+
+# SAS file backups
+*~

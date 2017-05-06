@@ -69,6 +69,6 @@ ODS PDF CLOSE;
  Are the mean sepal lengths different? Does it matter whether the significance
  level is 0.05 or 0.01?
  
- The mean sepal lengths are indeed different and it does not matter whether the
- significance level is 0.05 or 0.01.
+ The mean sepal lengths are overall indeed different and for each individual
+ analysis it does not matter whether the significance level is 0.05 or 0.01.
 *******************************************************************************/

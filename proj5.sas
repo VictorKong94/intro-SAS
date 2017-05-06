@@ -7,7 +7,7 @@ DATA PRODPREF;
         @16 (R11-R16) (1.)
         @25 (R21-R26) (1.)
         PREFERENCE;
-  * Determine the each judge's preferred sample;
+  * Determine each judge's preferred sample;
   IF SAMPLE1=27 AND PREFERENCE=1 OR
      SAMPLE2=27 AND PREFERENCE=2 THEN SAMPPREF=27;
   IF SAMPLE1=45 AND PREFERENCE=1 OR

@@ -10,7 +10,8 @@ DATA PRODPREF;
   * Determine the each judge's preferred sample;
   IF SAMPLE1=27 AND PREFERENCE=1 OR
      SAMPLE2=27 AND PREFERENCE=2 THEN SAMPPREF=27;
-  ELSE SAMPPREF=45;
+  IF SAMPLE1=45 AND PREFERENCE=1 OR
+     SAMPLE2=45 AND PREFERENCE=2 THEN SAMPPREF=45;
 RUN;
 
 * Determine the number of judges who preferred sample 27;

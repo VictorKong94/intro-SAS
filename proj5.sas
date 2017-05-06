@@ -39,5 +39,5 @@ PROC FREQ
 RUN;
 ODS TEXT="Although the distributions for aspect 1 seem similar for the two
  samples (p = 0.8257), the distributions for aspects 2 through 6 are likely
- different (p < 0.0020).";
+ different (p < 0.0020). The products are not interchangeable.";
 ODS PDF CLOSE;

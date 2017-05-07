@@ -1,6 +1,6 @@
 TITLE 'Introduction to SAS: Project 8';
 
-* Load the iris data with species and sepal length;
+* Load the Iris data with species and sepal length;
 DATA IRIS;
   INFILE '/folders/myfolders/iris.dat';
   LENGTH SPECIES $10;

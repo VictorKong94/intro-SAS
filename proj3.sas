@@ -26,7 +26,7 @@ ODS TEXT="There is strong evidence to suggest the drug is effective in
  observe such extreme differences between the two weeks purely due to chance.";
 ODS PDF CLOSE;
 
-* Import the sepal lengths from the IRIS dataset;
+* Import the sepal lengths from the Iris dataset;
 DATA IRIS;
   INFILE '/folders/myfolders/iris.dat';
   INPUT SETOSA     _ _ _

@@ -60,7 +60,7 @@ PROC FREQ
          R14*R24
          R15*R25
          R16*R26
-  /CHISQ;
+  / CHISQ;
 RUN;
 ODS TEXT="Once again, we see the distributions for aspect 1 seem similar for the
  two samples (p = 0.8257) while the distributions for aspects 2 through 6 appear
